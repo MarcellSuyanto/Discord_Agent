@@ -42,6 +42,15 @@ def main():
 
         await ctx.send(f"Joined **{channel.name}**.")
 
+    @bot.command(name="ask")
+    @commands.guild_only()
+    async def ask(ctx, *, question:str)-> None:
+        author = ctx.author
+        async with ctx.typing():
+            response = ask_text(question)
+        await ctx.send(f"{author.mention}, {response}")
+
+
     bot.run(token, log_handler=handler, log_level=logging.DEBUG)
 
 

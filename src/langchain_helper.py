@@ -2,12 +2,8 @@ import os
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
-from langchain_core.tools import tool
 
-@tool
-def multiply(a: int, b: int) -> int:
-   """Multiply two numbers."""
-   return a * b
+
 
 
 
@@ -37,6 +33,23 @@ def set_up(model:str, input_vars:str, prompt:str) -> tuple[ChatOpenAI, PromptTem
     return llm, prompt_template
 
 
+def ask_text(question:str) -> str:
+    """
+    Ask a question to the LLM.
+    Args:
+        llm (ChatOpenAI): The LLM to use.
+        prompt_template (PromptTemplate): The prompt template to use.
+        question (str): The question to ask.
+    """
+    llm, prompt_template = set_up(
+        model='deepseek/deepseek-r1:free',
+        input_vars=["text"],
+        prompt="{text}"
+    )
+    chain = prompt_template | llm
+    response = chain.invoke({"text": question})
+    return response.content
+
 def main():
 
     models = {
@@ -44,13 +57,3 @@ def main():
         'audio': "deepseek/deepseek-a1:free",
         'image': "deepseek/deepseek-i1:free"
     }
-
-    llm, prompt_template = set_up(
-        model=models['text'],
-        input_vars=["text"],
-        prompt="What is {text}?"
-    )
-    chain = prompt_template | llm
-    response = chain.invoke({"text": "Retrieval Augmented Generation"})
-    print(response.content)
-
