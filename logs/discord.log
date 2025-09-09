@@ -302,3 +302,5 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Run
 [2025-09-09 13:45:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'VOICE_CHANNEL_STATUS_UPDATE', 's': 15, 'op': 0, 'd': {'status': None, 'id': '1412077665254637622', 'guild_id': '1412077663777984594'}}
 [2025-09-09 13:45:43] [DEBUG   ] discord.client: Dispatching event socket_event_type
 [2025-09-09 13:45:43] [DEBUG   ] discord.gateway: Unknown event VOICE_CHANNEL_STATUS_UPDATE.
+[2025-09-09 13:46:11] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 15.
+[2025-09-09 13:46:12] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
