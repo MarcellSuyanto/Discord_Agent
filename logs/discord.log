@@ -1,46 +1,11 @@
-[2025-09-09 13:36:48] [INFO    ] discord.client: logging in using static token
-[2025-09-09 13:36:48] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
-[2025-09-09 13:36:48] [DEBUG   ] discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
-[2025-09-09 13:36:48] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1412072574342529095', 'username': 'Bobzilla', 'avatar': '8a7ad443acb430d1d39d2af191008afc', 'discriminator': '3764', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': '28147b60215529388f831f7bf5900a9d', 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None, 'mfa_enabled': False, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
-[2025-09-09 13:36:49] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
-[2025-09-09 13:36:49] [DEBUG   ] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
-[2025-09-09 13:36:49] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1412072574342529095', 'name': 'Bobzilla', 'icon': None, 'description': '', 'type': None, 'bot': {'id': '1412072574342529095', 'username': 'Bobzilla', 'avatar': '8a7ad443acb430d1d39d2af191008afc', 'discriminator': '3764', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': '28147b60215529388f831f7bf5900a9d', 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'summary': '', 'is_monetized': False, 'is_verified': False, 'is_discoverable': False, 'bot_public': True, 'bot_require_code_grant': False, 'install_params': {'scopes': ['applications.commands'], 'permissions': '0'}, 'integration_types_config': {'0': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}, '1': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}}, 'verify_key': '05cb5349eaaffcb13b3bc7d6c5c50ff130e481b4c160ef3d10a81e066b6e4915', 'flags': 565248, 'hook': True, 'storefront_available': False, 'redirect_uris': [], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '1410659438976831609', 'username': 'bobzilla_bot', 'avatar': None, 'discriminator': '0', 'public_flags': 0, 'flags': 0, 'banner': None, 'accent_color': None, 'global_name': 'Bobzilla', 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'approximate_guild_count': 1, 'approximate_user_install_count': 0, 'approximate_user_authorization_count': 0, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': True, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 224, 'monetization_state': 1, 'verification_eligibility_flags': 91036, 'monetization_eligibility_flags': 181988, 'team': None, 'internal_guild_restriction': 2, 'approved_consoles': [], 'pricing_localization_strategy': 'localized_price_sets'}
-[2025-09-09 13:36:49] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
-[2025-09-09 13:36:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-c-3bm3",{"micros":0.0}]']}}
-[2025-09-09 13:36:49] [DEBUG   ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
-[2025-09-09 13:36:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:36:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'Bobzilla', 'primary_guild': None, 'mfa_enabled': False, 'id': '1412072574342529095', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '3764', 'clan': None, 'bot': True, 'avatar': '8a7ad443acb430d1d39d2af191008afc'}, 'session_type': 'normal', 'session_id': '59af20213ba9af2426750f93491d1aba', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1412077663777984594'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['hongkong', 'singapore', 'japan', 'india', 'dubai'], 'game_relationships': [], 'auth': {}, 'application': {'id': '1412072574342529095', 'flags': 565248}, '_trace': ['["gateway-prd-arm-us-east1-c-3bm3",{"micros":92782,"calls":["id_created",{"micros":358,"calls":[]},"session_lookup_time",{"micros":364,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-122",{"micros":91743,"calls":["start_session",{"micros":79614,"calls":["discord-api-rpc-548b7d7b58-wfmmc",{"micros":43390,"calls":["get_user",{"micros":6752},"get_guilds",{"micros":1800},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":369},"authorized_ip_coro",{"micros":7},"pending_payments",{"micros":22034},"apex_experiments",{"micros":7485},"user_activities",{"micros":11},"played_application_ids",{"micros":3}]}]},"starting_guild_connect",{"micros":26,"calls":[]},"presence_started",{"micros":222,"calls":[]},"guilds_started",{"micros":79,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":11782,"calls":[]},"connect_finished",{"micros":11785,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]']}}
-[2025-09-09 13:36:49] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:36:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 59af20213ba9af2426750f93491d1aba).
-[2025-09-09 13:36:49] [DEBUG   ] discord.client: Dispatching event connect
-[2025-09-09 13:36:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'rules_channel_id': None, 'members': [{'user': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'display_name': 'Bobzilla', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': None}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, {'user': {'username': 'Bobzilla', 'public_flags': 0, 'primary_guild': None, 'id': '1412072574342529095', 'global_name': None, 'display_name_styles': None, 'display_name': None, 'discriminator': '3764', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': '8a7ad443acb430d1d39d2af191008afc'}, 'roles': ['1412078967724441684'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:17:41.156000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'mfa_level': 0, 'nsfw_level': 0, 'explicit_content_filter': 0, 'owner_configured_content_level': 0, 'incidents_data': None, 'application_id': None, 'profile': None, 'system_channel_flags': 0, 'premium_subscription_count': 0, 'joined_at': '2025-09-01T14:17:41.156000+00:00', 'banner': None, 'premium_features': None, 'afk_timeout': 300, 'id': '1412077663777984594', 'safety_alerts_channel_id': None, 'name': "Bobzilla's server", 'voice_states': [], 'guild_scheduled_events': [], 'nsfw': False, 'system_channel_id': '1412077665254637621', 'soundboard_sounds': [], 'default_message_notifications': 0, 'home_header': None, 'owner_id': '1410659438976831609', 'threads': [], 'unavailable': False, 'inventory_settings': None, 'region': 'deprecated', 'max_stage_video_channel_users': 50, 'description': None, 'preferred_locale': 'en-US', 'stickers': [], 'activity_instances': [], 'discovery_splash': None, 'max_members': 25000000, 'roles': [{'version': 1756735950525, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1412077663777984594', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1756736261134, 'unicode_emoji': None, 'tags': {'bot_id': '1412072574342529095'}, 'position': 1, 'permissions': '39913465966400', 'name': 'Bobzilla', 'mentionable': False, 'managed': True, 'id': '1412078967724441684', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'vanity_url_code': None, 'moderator_reporting': None, 'afk_channel_id': None, 'member_count': 2, 'stage_instances': [], 'premium_tier': 0, 'emojis': [], 'verification_level': 0, 'hub_type': None, 'public_updates_channel_id': None, 'presences': [{'user': {'id': '1410659438976831609'}, 'status': 'online', 'processed_at_timestamp': 1757395754040, 'client_status': {'desktop': 'online'}, 'activities': []}, {'user': {'id': '1412072574342529095'}, 'status': 'online', 'processed_at_timestamp': 0, 'client_status': {'web': 'online'}, 'activities': []}], 'lazy': True, 'latest_onboarding_question_id': None, 'channels': [{'version': 1756735950536, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '1412077665254637619', 'flags': 0}, {'version': 1756735950554, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '1412077665254637620', 'flags': 0}, {'version': 1756735950571, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1412077665254637619', 'name': 'general', 'last_message_id': '1414846847561895949', 'id': '1412077665254637621', 'icon_emoji': {'name': '👋', 'id': None}, 'flags': 0}, {'version': 1756735950584, 'user_limit': 0, 'type': 2, 'status': None, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1412077665254637620', 'name': 'General', 'last_message_id': None, 'id': '1412077665254637622', 'icon_emoji': {'name': '🎙', 'id': None}, 'flags': 0, 'bitrate': 64000}, {'version': 1756739193668, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1412077665254637620', 'name': 'hi', 'last_message_id': None, 'id': '1412091267931832383', 'flags': 0, 'bitrate': 64000}], 'icon': None, 'version': 1756739183760, 'premium_progress_bar_enabled': False, 'splash': None, 'large': False, 'application_command_counts': {}, 'max_video_channel_users': 25, 'embedded_activities': [], 'features': []}}
-[2025-09-09 13:36:49] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:36:49] [DEBUG   ] discord.client: Dispatching event guild_available
-[2025-09-09 13:36:51] [DEBUG   ] discord.client: Dispatching event ready
-[2025-09-09 13:37:30] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 2.
-[2025-09-09 13:37:31] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:37:54] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '1410659438976831609', 'timestamp': 1757396273, 'member': {'user': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'display_name': 'Bobzilla', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': None}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'channel_id': '1412077665254637621', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:37:54] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:37:54] [DEBUG   ] discord.client: Dispatching event typing
-[2025-09-09 13:37:54] [DEBUG   ] discord.client: Dispatching event raw_typing
-[2025-09-09 13:38:01] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2025-09-09T05:38:00.539000+00:00', 'pinned': False, 'nonce': '1414847290660618240', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'id': '1414847290048385036', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '!ask what is the average weight of a cow', 'components': [], 'channel_type': 0, 'channel_id': '1412077665254637621', 'author': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'discriminator': '0', 'collectibles': None, 'clan': None, 'avatar_decoration_data': None, 'avatar': None}, 'attachments': [], 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:38:01] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:38:01] [DEBUG   ] discord.client: Dispatching event message
-[2025-09-09 13:38:01] [DEBUG   ] discord.client: Dispatching event command
-[2025-09-09 13:38:01] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 5, 'op': 0, 'd': {'user_id': '1412072574342529095', 'timestamp': 1757396281, 'member': {'user': {'username': 'Bobzilla', 'public_flags': 0, 'primary_guild': None, 'id': '1412072574342529095', 'global_name': None, 'display_name_styles': None, 'display_name': None, 'discriminator': '3764', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': '8a7ad443acb430d1d39d2af191008afc'}, 'roles': ['1412078967724441684'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:17:41.156000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'channel_id': '1412077665254637621', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:38:01] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:38:01] [DEBUG   ] discord.client: Dispatching event typing
-[2025-09-09 13:38:01] [DEBUG   ] discord.client: Dispatching event raw_typing
-[2025-09-09 13:38:01] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1412077665254637621/typing with None has returned 204
-[2025-09-09 13:38:01] [DEBUG   ] discord.http: POST /channels/{channel_id}/typing has found its initial rate limit bucket hash (b3c972d7573fa7e2caf7f22fae7caacb).
-[2025-09-09 13:38:01] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1412077665254637621/typing has received 
-[2025-09-09 13:38:12] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 5.
-[2025-09-09 13:38:22] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+[2025-09-10 12:39:43] [INFO    ] discord.client: logging in using static token
+[2025-09-10 12:39:44] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: dab9446c5b0ba43f4aa91ffbd43b01e6).
+[2025-09-10 12:40:35] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
 Loop thread traceback (most recent call last):
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 59, in <module>
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 23, in <module>
     main()
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 54, in main
-    bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 18, in main
+    bot.run(token=token, log_handler=handler)
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 929, in run
     asyncio.run(runner())
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
@@ -69,10 +34,89 @@ Loop thread traceback (most recent call last):
     await injected(*ctx.args, **ctx.kwargs)  # type: ignore
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
     ret = await coro(*args, **kwargs)
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 50, in ask
-    response = ask_text(question)
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 50, in ask_text
-    response = chain.invoke({"text": question})
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\discord_helper.py", line 54, in search
+    response = search_text(query)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 71, in search_text
+    full_body = wikipedia.page(results[0]).content
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 276, in page
+    return WikipediaPage(title, redirect=redirect, preload=preload)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 299, in __init__
+    self.__load(redirect=redirect, preload=preload)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 367, in __load
+    self.__init__(redirects['to'], redirect=redirect, preload=preload)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 299, in __init__
+    self.__load(redirect=redirect, preload=preload)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 336, in __load
+    request = _wiki_request(query_params)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 737, in _wiki_request
+    r = requests.get(API_URL, params=params, headers=headers)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\sessions.py", line 724, in send
+    history = [resp for resp in gen]
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\urllib3\util\ssl_.py", line 458, in ssl_wrap_socket
+    context.load_verify_locations(ca_certs, ca_cert_dir, ca_cert_data)
+
+[2025-09-10 12:40:45] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 23, in <module>
+    main()
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 18, in main
+    bot.run(token=token, log_handler=handler)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 929, in run
+    asyncio.run(runner())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1421, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1418, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\discord_helper.py", line 54, in search
+    response = search_text(query)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 84, in search_text
+    response = chain.invoke({
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\runnables\base.py", line 3082, in invoke
     input_ = context.run(step.invoke, input_, config)
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 393, in invoke
@@ -122,12 +166,12 @@ Loop thread traceback (most recent call last):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1168, in read
     return self._sslobj.read(len)
 
-[2025-09-09 13:38:32] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
+[2025-09-10 12:40:55] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 30 seconds.
 Loop thread traceback (most recent call last):
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 59, in <module>
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 23, in <module>
     main()
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 54, in main
-    bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 18, in main
+    bot.run(token=token, log_handler=handler)
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 929, in run
     asyncio.run(runner())
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
@@ -156,10 +200,10 @@ Loop thread traceback (most recent call last):
     await injected(*ctx.args, **ctx.kwargs)  # type: ignore
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
     ret = await coro(*args, **kwargs)
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 50, in ask
-    response = ask_text(question)
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 50, in ask_text
-    response = chain.invoke({"text": question})
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\discord_helper.py", line 54, in search
+    response = search_text(query)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 84, in search_text
+    response = chain.invoke({
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\runnables\base.py", line 3082, in invoke
     input_ = context.run(step.invoke, input_, config)
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 393, in invoke
@@ -209,74 +253,140 @@ Loop thread traceback (most recent call last):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1168, in read
     return self._sslobj.read(len)
 
-[2025-09-09 13:38:37] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 1, 'd': None}
-[2025-09-09 13:38:37] [DEBUG   ] discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=1000, extra='')
-[2025-09-09 13:38:37] [DEBUG   ] discord.gateway: Websocket closed with 1000, attempting a reconnect.
-[2025-09-09 13:38:37] [DEBUG   ] discord.client: Got a request to RESUME the websocket.
-[2025-09-09 13:38:37] [DEBUG   ] discord.client: Dispatching event disconnect
-[2025-09-09 13:38:38] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway-us-east1-c.discord.gg
-[2025-09-09 13:38:38] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-c-6cwv",{"micros":0.0}]']}}
-[2025-09-09 13:38:38] [DEBUG   ] discord.gateway: Shard ID None has sent the RESUME payload.
-[2025-09-09 13:38:38] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1412077665254637621/messages with {"content":"<@1410659438976831609>, The average weight of a cow varies by breed, gender, and purpose, but here's a general guideline:\n\n- **Dairy cows** (e.g., Holsteins): 1,400–1,500 lbs (635–680 kg)  \n- **Beef cows** (e.g., Angus, Hereford): 1,200–1,400 lbs (540–635 kg)  \n\n**Overall average**: Approximately **1,200–1,500 lbs (540–680 kg)** for mature female cows. Bulls and steers (males) often weigh more, while calves are significantly lighter. Factors like breed, diet, and geographic region also influence weight. For a single estimate, **1,400 lbs (635 kg)** is commonly cited as a typical average.","components":[],"nonce":"10952352460067422096","enforce_nonce":true,"tts":false} has returned 200
-[2025-09-09 13:38:38] [DEBUG   ] discord.http: POST /channels/{channel_id}/messages has found its initial rate limit bucket hash (3df15bae86f6647dd4dfcbd5c6949480).
-[2025-09-09 13:38:38] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1412077665254637621/messages has received {'type': 0, 'content': "<@1410659438976831609>, The average weight of a cow varies by breed, gender, and purpose, but here's a general guideline:\n\n- **Dairy cows** (e.g., Holsteins): 1,400–1,500 lbs (635–680 kg)  \n- **Beef cows** (e.g., Angus, Hereford): 1,200–1,400 lbs (540–635 kg)  \n\n**Overall average**: Approximately **1,200–1,500 lbs (540–680 kg)** for mature female cows. Bulls and steers (males) often weigh more, while calves are significantly lighter. Factors like breed, diet, and geographic region also influence weight. For a single estimate, **1,400 lbs (635 kg)** is commonly cited as a typical average.", 'mentions': [{'id': '1410659438976831609', 'username': 'bobzilla_bot', 'avatar': None, 'discriminator': '0', 'public_flags': 0, 'flags': 0, 'banner': None, 'accent_color': None, 'global_name': 'Bobzilla', 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}], 'mention_roles': [], 'attachments': [], 'embeds': [], 'timestamp': '2025-09-09T05:38:37.805000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'id': '1414847446353182750', 'channel_id': '1412077665254637621', 'author': {'id': '1412072574342529095', 'username': 'Bobzilla', 'avatar': '8a7ad443acb430d1d39d2af191008afc', 'discriminator': '3764', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': '28147b60215529388f831f7bf5900a9d', 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'pinned': False, 'mention_everyone': False, 'tts': False, 'nonce': '10952352460067422096'}
-[2025-09-09 13:38:38] [DEBUG   ] discord.client: Dispatching event command_completion
-[2025-09-09 13:38:38] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:38:38] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 6, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2025-09-09T05:38:37.805000+00:00', 'pinned': False, 'nonce': '10952352460067422096', 'mentions': [{'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'member': {'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'discriminator': '0', 'collectibles': None, 'clan': None, 'avatar_decoration_data': None, 'avatar': None}], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['1412078967724441684'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:17:41.156000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'id': '1414847446353182750', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': "<@1410659438976831609>, The average weight of a cow varies by breed, gender, and purpose, but here's a general guideline:\n\n- **Dairy cows** (e.g., Holsteins): 1,400–1,500 lbs (635–680 kg)  \n- **Beef cows** (e.g., Angus, Hereford): 1,200–1,400 lbs (540–635 kg)  \n\n**Overall average**: Approximately **1,200–1,500 lbs (540–680 kg)** for mature female cows. Bulls and steers (males) often weigh more, while calves are significantly lighter. Factors like breed, diet, and geographic region also influence weight. For a single estimate, **1,400 lbs (635 kg)** is commonly cited as a typical average.", 'components': [], 'channel_type': 0, 'channel_id': '1412077665254637621', 'author': {'username': 'Bobzilla', 'public_flags': 0, 'primary_guild': None, 'id': '1412072574342529095', 'global_name': None, 'display_name_styles': None, 'discriminator': '3764', 'collectibles': None, 'clan': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': '8a7ad443acb430d1d39d2af191008afc'}, 'attachments': [], 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:38:38] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:38:38] [DEBUG   ] discord.client: Dispatching event message
-[2025-09-09 13:38:38] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 7, 'op': 0, 'd': {'_trace': ['["gateway-prd-arm-us-east1-c-6cwv",{"micros":12281,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":11939,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-122",{"micros":19}]}]']}}
-[2025-09-09 13:38:38] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:38:38] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 59af20213ba9af2426750f93491d1aba.
-[2025-09-09 13:38:38] [DEBUG   ] discord.client: Dispatching event resumed
-[2025-09-09 13:39:19] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 7.
-[2025-09-09 13:39:19] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:39:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 8, 'op': 0, 'd': {'user_id': '1410659438976831609', 'timestamp': 1757396360, 'member': {'user': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'display_name': 'Bobzilla', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': None}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'channel_id': '1412077665254637621', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:39:20] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:39:20] [DEBUG   ] discord.client: Dispatching event typing
-[2025-09-09 13:39:20] [DEBUG   ] discord.client: Dispatching event raw_typing
-[2025-09-09 13:40:00] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:40:00] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:40:41] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:40:42] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:41:23] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:41:23] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:42:04] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:42:04] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:42:45] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:42:45] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:43:26] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:43:27] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:44:08] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 8.
-[2025-09-09 13:44:08] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:44:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 9, 'op': 0, 'd': {'member': {'user': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'display_name': 'Bobzilla', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': None}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'user_id': '1410659438976831609', 'suppress': False, 'session_id': '6a9e29c82005a0d2ba347ec08fb40d8d', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'request_to_speak_timestamp': None, 'mute': False, 'guild_id': '1412077663777984594', 'discoverable': True, 'deaf': False, 'channel_id': '1412077665254637622'}}
-[2025-09-09 13:44:39] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:44:39] [DEBUG   ] discord.client: Dispatching event voice_state_update
-[2025-09-09 13:44:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'VOICE_CHANNEL_START_TIME_UPDATE', 's': 10, 'op': 0, 'd': {'voice_start_time': 1757396678, 'id': '1412077665254637622', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:44:39] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:44:39] [DEBUG   ] discord.gateway: Unknown event VOICE_CHANNEL_START_TIME_UPDATE.
-[2025-09-09 13:44:41] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 11, 'op': 0, 'd': {'user_id': '1410659438976831609', 'timestamp': 1757396680, 'member': {'user': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'display_name': 'Bobzilla', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': None}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'channel_id': '1412077665254637621', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:44:41] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:44:41] [DEBUG   ] discord.client: Dispatching event typing
-[2025-09-09 13:44:41] [DEBUG   ] discord.client: Dispatching event raw_typing
-[2025-09-09 13:44:42] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 12, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2025-09-09T05:44:41.826000+00:00', 'pinned': False, 'nonce': '1414848973394411520', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'id': '1414848973167923234', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '!join', 'components': [], 'channel_type': 0, 'channel_id': '1412077665254637621', 'author': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'discriminator': '0', 'collectibles': None, 'clan': None, 'avatar_decoration_data': None, 'avatar': None}, 'attachments': [], 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:44:42] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:44:42] [DEBUG   ] discord.client: Dispatching event message
-[2025-09-09 13:44:42] [DEBUG   ] discord.client: Dispatching event command
-[2025-09-09 13:44:42] [DEBUG   ] discord.client: Dispatching event command_error
-[2025-09-09 13:44:42] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command join
+[2025-09-10 12:41:01] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session dab9446c5b0ba43f4aa91ffbd43b01e6.
+[2025-09-10 12:46:41] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 23, in <module>
+    main()
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 18, in main
+    bot.run(token=token, log_handler=handler)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 929, in run
+    asyncio.run(runner())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 504, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1421, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1418, in process_commands
+    await self.invoke(ctx)  # type: ignore
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\discord_helper.py", line 54, in search
+    response = search_text(query)
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 84, in search_text
+    response = chain.invoke({
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\runnables\base.py", line 3082, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 393, in invoke
+    self.generate_prompt(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1019, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 837, in generate
+    self._generate_with_cache(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1085, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1178, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\openai\_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1147, in create
+    return self._post(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpx\_client.py", line 922, in send
+    response.read()
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpx\_models.py", line 881, in read
+    self._content = b"".join(self.iter_bytes())
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpx\_models.py", line 897, in iter_bytes
+    for raw_bytes in self.iter_raw():
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpx\_models.py", line 951, in iter_raw
+    for raw_stream_bytes in self.stream:
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpx\_client.py", line 153, in __iter__
+    for chunk in self._stream:
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpx\_transports\default.py", line 127, in __iter__
+    for part in self._httpcore_stream:
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 403, in __iter__
+    for part in self._stream:
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpcore\_sync\http11.py", line 334, in __iter__
+    for chunk in self._connection._receive_response_body(**kwargs):
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpcore\_sync\http11.py", line 203, in _receive_response_body
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\httpcore\_backends\sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1295, in recv
+    return self.read(buflen)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1168, in read
+    return self._sslobj.read(len)
+
+[2025-09-10 12:46:47] [ERROR   ] discord.client: Attempting a reconnect in 0.30s
+Traceback (most recent call last):
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\client.py", line 727, in connect
+    await self.ws.poll_event()
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\gateway.py", line 635, in poll_event
+    await self.received_message(msg.data)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\gateway.py", line 540, in received_message
+    await self.send_as_json(beat)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\gateway.py", line 671, in send_as_json
+    await self.send(utils._to_json(data))
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\gateway.py", line 667, in send
+    await self.socket.send_str(data)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\aiohttp\client_ws.py", line 245, in send_str
+    await self._writer.send_frame(
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\aiohttp\_websocket\writer.py", line 126, in send_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+[2025-09-10 12:46:48] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session dab9446c5b0ba43f4aa91ffbd43b01e6.
+[2025-09-10 13:04:44] [WARNING ] discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+[2025-09-10 13:04:44] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+[2025-09-10 13:04:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b68e1cdf93f23c5c239a3b0f59e670eb).
+[2025-09-10 13:10:49] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command search
 Traceback (most recent call last):
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 266, in wrapped
     ret = await coro(*args, **kwargs)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\main.py", line 41, in join
-    await channel.connect(self_deaf=False, self_mute=False)
-  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\abc.py", line 2141, in connect
-    voice: T = cls(client, self)
-               ^^^^^^^^^^^^^^^^^
-  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\voice_client.py", line 220, in __init__
-    raise RuntimeError('PyNaCl library needed in order to use voice')
-RuntimeError: PyNaCl library needed in order to use voice
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\discord_helper.py", line 54, in search
+    response = search_text(query)
+               ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\src\langchain_helper.py", line 70, in search_text
+    summary = wikipedia.summary(results[0], sentences=3)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\util.py", line 28, in __call__
+    ret = self._cache[key] = self.fn(*args, **kwargs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 231, in summary
+    page_info = page(title, auto_suggest=auto_suggest, redirect=redirect)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 276, in page
+    return WikipediaPage(title, redirect=redirect, preload=preload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 299, in __init__
+    self.__load(redirect=redirect, preload=preload)
+  File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\wikipedia\wikipedia.py", line 345, in __load
+    raise PageError(self.title)
+wikipedia.exceptions.PageError: Page id "still road" does not match any pages. Try another id!
 
 The above exception was the direct cause of the following exception:
 
@@ -288,19 +398,5 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Marcell Suyanto\OneDrive\Documents\GitHub\Discord_Agent\venv\Lib\site-packages\discord\ext\commands\core.py", line 275, in wrapped
     raise CommandInvokeError(exc) from exc
-discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RuntimeError: PyNaCl library needed in order to use voice
-[2025-09-09 13:44:49] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 12.
-[2025-09-09 13:44:49] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:45:30] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 12.
-[2025-09-09 13:45:30] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2025-09-09 13:45:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 13, 'op': 0, 'd': {'member': {'user': {'username': 'bobzilla_bot', 'public_flags': 0, 'primary_guild': None, 'id': '1410659438976831609', 'global_name': 'Bobzilla', 'display_name_styles': None, 'display_name': 'Bobzilla', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': None}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-09-01T14:12:30.291000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'user_id': '1410659438976831609', 'suppress': False, 'session_id': '6a9e29c82005a0d2ba347ec08fb40d8d', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'request_to_speak_timestamp': None, 'mute': False, 'guild_id': '1412077663777984594', 'discoverable': True, 'deaf': False, 'channel_id': None}}
-[2025-09-09 13:45:43] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:45:43] [DEBUG   ] discord.client: Dispatching event voice_state_update
-[2025-09-09 13:45:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'VOICE_CHANNEL_START_TIME_UPDATE', 's': 14, 'op': 0, 'd': {'voice_start_time': None, 'id': '1412077665254637622', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:45:43] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:45:43] [DEBUG   ] discord.gateway: Unknown event VOICE_CHANNEL_START_TIME_UPDATE.
-[2025-09-09 13:45:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'VOICE_CHANNEL_STATUS_UPDATE', 's': 15, 'op': 0, 'd': {'status': None, 'id': '1412077665254637622', 'guild_id': '1412077663777984594'}}
-[2025-09-09 13:45:43] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2025-09-09 13:45:43] [DEBUG   ] discord.gateway: Unknown event VOICE_CHANNEL_STATUS_UPDATE.
-[2025-09-09 13:46:11] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 15.
-[2025-09-09 13:46:12] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: PageError: Page id "still road" does not match any pages. Try another id!
+[2025-09-10 13:26:13] [WARNING ] discord.gateway: Can't keep up, shard ID None websocket is 50.2s behind.
