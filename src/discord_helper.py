@@ -23,6 +23,7 @@ def bot_set_up():
         print(f"I am {bot.user.name}")
 
     voice_tasks = {}
+
     #Join VC
     @bot.command(name="join")
     @commands.guild_only()
