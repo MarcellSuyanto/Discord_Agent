@@ -19,7 +19,7 @@ pauseFlag = False
 
 async def pauseCheck(flag):
     """
-    If True, puts the listener into a paused state so `bazingaCheck` returns True immediately.
+    If True, puts the listener into a paused state so `wakeCheck` returns True immediately.
     This lets you stop the voice loop programmatically without speaking the wake/exit word.
     """
     global pauseFlag
@@ -28,7 +28,7 @@ async def pauseCheck(flag):
     else:
         pauseFlag = False
 
-async def bazingaCheck(spokenList):
+async def wakeCheck(spokenList):
     """
     Returns True if the system is paused (pauseFlag) OR if any variant of 'bazinga'
     is present in the recognized words. Your loop uses this to decide when to exit.
@@ -40,13 +40,11 @@ async def bazingaCheck(spokenList):
             return True
     return False
 
-# ----- NEW: local transcription using faster-whisper -----
 def transcribe_with_faster_whisper(audio_data: sr.AudioData) -> str:
     """
     Convert SpeechRecognition AudioData to a temp WAV file, then run local
     faster-whisper transcription and return the combined text.
     """
-    # Write the captured audio to a temporary WAV file
     wav_bytes = audio_data.get_wav_data()
     tmp_path = None
     try:
@@ -71,7 +69,7 @@ def transcribe_with_faster_whisper(audio_data: sr.AudioData) -> str:
 
 async def startVoiceInput(ctx):
     spokenWords = []
-    while not await bazingaCheck(spokenWords):
+    while not await wakeCheck(spokenWords):
         spokenWords.clear()
         await ctx.send("[DEBUG] Speech recognition activated!")
 
