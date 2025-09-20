@@ -31,13 +31,12 @@ def set_up(model:str, input_vars:str, prompt:str) -> tuple[ChatOpenAI, PromptTem
 
     return llm, prompt_template
 
+# Convert into Langchain tool
 
 def ask_text(question:str) -> str:
     """
     Ask a question to the LLM.
     Args:
-        llm (ChatOpenAI): The LLM to use.
-        prompt_template (PromptTemplate): The prompt template to use.
         question (str): The question to ask.
     """
     llm, prompt_template = set_up(
@@ -49,7 +48,7 @@ def ask_text(question:str) -> str:
     response = chain.invoke({"text": question})
     return response.content
 
-
+# Convert into Langchain tool
 def search_text(query: str) -> str:
     """
     Search for a query using DuckDuckGo.
