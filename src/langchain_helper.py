@@ -65,7 +65,6 @@ def search_text(query: str) -> str:
     response = chain.invoke({"query": query})
     print(response.content)
     results = wikipedia.search(response.content)
-    print(f"Wiki result: {results[0]}")
     # summary, content, links
     summary = wikipedia.summary(results[0], sentences=3)
     full_body = wikipedia.page(results[0]).content

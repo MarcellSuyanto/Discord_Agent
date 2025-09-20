@@ -5,6 +5,8 @@ import logging
 from dotenv import load_dotenv
 import os
 from src.langchain_helper import ask_text, search_text
+from src.whisper_stt import *
+import asyncio
 
 def bot_set_up():
     intents = discord.Intents.default()
@@ -19,6 +21,8 @@ def bot_set_up():
     @bot.event
     async def on_ready():
         print(f"I am {bot.user.name}")
+
+    voice_tasks = {}
 
     #Join VC
     @bot.command(name="join")
@@ -38,6 +42,15 @@ def bot_set_up():
 
         await ctx.send(f"Joined **{channel.name}**.")
 
+        task = voice_tasks.get(ctx.guild.id)
+        print(task)
+        if task and not task.done():
+            await ctx.send("[DEBUG] Voice recognition already running for this server.")
+        else:
+            await ctx.send("Hello")
+            voice_tasks[ctx.guild.id] = asyncio.create_task(startVoiceInput(ctx))
+            print(voice_tasks)
+
     @bot.command(name="ask")
     @commands.guild_only()
     async def ask(ctx, *, question:str)-> None:
@@ -53,6 +66,7 @@ def bot_set_up():
         async with ctx.typing():
             response = search_text(query)
         await ctx.send(f"{author.mention}, {response}")
+    
     return bot
 
 

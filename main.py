@@ -18,6 +18,5 @@ def main():
     bot.run(token=token, log_handler=handler)
 
 
-
 if __name__ == "__main__":
     main()  
