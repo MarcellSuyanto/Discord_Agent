@@ -13,6 +13,6 @@
 - ask: Ask a question to an LLM model
 - think: Solve a problem
 
-# Contributors
+## Contributors
 [Marcell Suyanto](https://github.com/MarcellSuyanto)  
 [Nicholas Tandiko](https://github.com/NicTzz)
