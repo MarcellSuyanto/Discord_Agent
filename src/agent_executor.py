@@ -5,7 +5,7 @@ from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain.agents import create_tool_calling_agent, AgentExecutor
-from tools import search_tool, wiki_tool, save_tool
+from src.lgchain_tools import search_tool, wiki_tool, save_tool
 import os
 from langchain.agents import initialize_agent, AgentType
 
@@ -44,9 +44,9 @@ tools = [search_tool, wiki_tool, save_tool]
 agent_executor = initialize_agent(
     tools=[wiki_tool, search_tool, save_tool],  # include other tools if you like
     llm=llm,
-    agent_type=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION,  # ✅ natural language outputs
+    agent_type=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION,  # natural language outputs
     verbose=True,
-    return_intermediate_steps=False             # ✅ ensures only final text output
+    return_intermediate_steps=False             # only final text output
 )
 
 # agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
