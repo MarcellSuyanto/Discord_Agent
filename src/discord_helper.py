@@ -7,6 +7,9 @@ import os
 from src.langchain_helper import ask_text, search_text
 from src.whisper_stt import *
 import asyncio
+from langchain.agents import create_tool_calling_agent, AgentExecutor
+from src.lgchain_tools import *
+from src.agent_executor import *
 
 def bot_set_up():
     intents = discord.Intents.default()
@@ -66,6 +69,16 @@ def bot_set_up():
         async with ctx.typing():
             response = search_text(query)
         await ctx.send(f"{author.mention}, {response}")
+
+    @bot.command(name='research')
+    @commands.guild_only()
+    async def research(ctx, *, query: str):
+        # call your agent
+        raw_response = agent_executor.invoke({"input": query})
+        output = raw_response.get("output", "No output returned")
+
+        # send result to the same channel
+        await ctx.send(f"**Research on {query}:**\n{output}")
     
     return bot
 
