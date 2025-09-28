@@ -1,9 +1,16 @@
 import os
-from urllib import response
+from pydantic import BaseModel
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import wikipedia
+
+
+class SearchResponse(BaseModel):
+    topic: str
+    summary: str
+    sources: list[str]
+    tools_used: list[str]
 
 
 def set_up(model:str, input_vars:str, prompt:str) -> tuple[ChatOpenAI, PromptTemplate]:
@@ -20,7 +27,7 @@ def set_up(model:str, input_vars:str, prompt:str) -> tuple[ChatOpenAI, PromptTem
     llm = ChatOpenAI(
         model=model,
         base_url="https://openrouter.ai/api/v1",
-        temperature=0.7,
+        temperature=0.2,
         api_key=API_KEY
     )
 
